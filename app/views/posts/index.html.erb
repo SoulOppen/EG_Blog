@@ -1,4 +1,5 @@
 <h1>Posts</h1>
+<div class="container-fluid">
 <table>
     <tr>
         <th>Titulo</th>
@@ -10,10 +11,11 @@
     <tr>
         <td><%= post.title %></td>
         <td><%= post.created_at %></td>
-        <td><%= image_tag post.image_url %></td>
+        <td><%= image_tag post.image_url%></td>
         <td><%= post.content %></td>
     </tr>
     <% end %>
+</div>
 </table>
 <h2>Ingrese su posts</h2>
 <form method="get" action="posts/create" class="py-3">
